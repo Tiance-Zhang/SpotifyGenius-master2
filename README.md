@@ -2,10 +2,6 @@
 
 An app created with React served by Express that gets lyrics for a song upon user request. It does this by fetching data from an API wrapper. The API wrapper requires the user to authenticate with the Spotify Account Services. It uses the query to search for songs via the Spotify API and pulls lyrics given the song title and artist from the genius API. This project did not use create-react-app because I wanted to suffer through the process of setting up the project from scratch.
 
-Deployed on heroku: https://spotify-genius.herokuapp.com/
-
-
-![Site]()
 
 ## Setup
 
