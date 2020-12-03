@@ -1,0 +1,42 @@
+.lyricsSection {
+    /* width: 60%; */
+    height: 90vh;
+    background-color: lightskyblue;
+    color: #f8f4f3;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: .5%; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    animation: slide-up ease .4s;
+    box-shadow: 0 10px 10px -10px rgba(0,0,0,.21), 10px 0 10px -10px rgba(0,0,0,.21);
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4c4345;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 6px;
+    background: #555;
+}

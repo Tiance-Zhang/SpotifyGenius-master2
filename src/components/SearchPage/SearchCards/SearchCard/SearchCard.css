@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    cursor: pointer;
+    transition: all ease-out .3s;
+    opacity: .8;
+    animation: slide-up .4s ease;
+}
+
+.container:hover {
+    opacity: 1;
+}
+
+.imageContainer {
+    display: flex;
+    max-width: 45%;
+    justify-content: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 20px;
+    color: antiquewhite;
+}
+
+.container:not(:first-child) {
+    border-top: 1px solid white;
+}
+
+.active {
+    opacity: 1;
+}
+
+h6 {
+    font-style: italic;
+    color: antiquewhite;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+p {
+    color: floralwhite;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
